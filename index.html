@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Спасение в Иисусе Христе</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      /* 1. Use a more-intuitive box-sizing model */
+      *, *::before, *::after {
+	  box-sizing: border-box;
+      }
+
+      /* 2. Remove default margin */
+      *:not(dialog) {
+	  margin: 0;
+      }
+
+      /* 3. Enable keyword animations */
+      @media (prefers-reduced-motion: no-preference) {
+	  html {
+	      interpolate-size: allow-keywords;
+	  }
+      }
+
+      body {
+	  /* 4. Increase line-height */
+	  line-height: 1.5;
+	  /* 5. Improve text rendering */
+	  -webkit-font-smoothing: antialiased;
+      }
+
+      /* 6. Improve media defaults */
+      img, picture, video, canvas, svg {
+	  display: block;
+	  max-width: 100%;
+      }
+
+      /* 7. Inherit fonts for form controls */
+      input, button, textarea, select {
+	  font: inherit;
+      }
+
+      /* 8. Avoid text overflows */
+      p, h1, h2, h3, h4, h5, h6 {
+	  overflow-wrap: break-word;
+      }
+
+      /* 9. Improve line wrapping */
+      p {
+	  text-wrap: pretty;
+      }
+      h1, h2, h3, h4, h5, h6 {
+	  text-wrap: balance;
+      }
+
+      /*
+	10. Create a root stacking context
+       */
+      #root, #__next {
+	  isolation: isolate;
+      }
+      
+      .bg {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  position: fixed;
+	  inset: 0px;
+	  z-index: -1;
+	  overflow-y: auto;
+	  background-image: linear-gradient(to top, #fbc179, #ffc086, #ffc092, #ffc19e, #ffc2aa, #ffc3b2, #ffc4b9, #ffc5c0, #ffc5c7, #ffc5cd, #fec6d4, #fcc7db);
+      }
+      
+      .content {
+	  font-family: "Roboto", "Noto Color Emoji", sans-serif;
+	  font-optical-sizing: auto;
+	  font-style: normal;
+	  font-variation-settings: "wdth" 100;
+	  font-size: clamp(1rem, 1.5vw, 3rem);
+	  max-width: 50%;
+	  padding: 30px;
+	  background-color: #fff;
+	  border-radius: 20px;
+	  margin: auto;
+      }
+
+      a, a:visited {
+	  color: hsl(24, 90%, 50%);
+	  text-decoration: none;
+      }
+
+      @media (max-width: 600px) {
+	  .content {
+	      max-width: 95vw;
+	  }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="content">
+	<p>
+	  📢 С <strong>13 апреля 2026 года</strong> в связи со сложностями в поддержании моего независимого сервера <strong>salvation-in-jesus-chri.st</strong> была завершена работа моего нового канала на PeerTube. Все видео с него (без встроенной рекламы) перемещены на мой Яндекс.Диск: <a href="https://disk.yandex.ru/d/76bpxG_9rHccXw" target="_blank">disk.yandex.ru/d/76bpxG_9rHccXw</a>. Также на моем Яндекс.Диске выложены картинки с цитатами из Нового: <a href="https://disk.yandex.ru/d/l63eeFFl2tpbrw" target="_blank">disk.yandex.ru/d/l63eeFFl2tpbrw</a> и Ветхого: <a href="https://disk.yandex.ru/d/0PTDBULI4O-hMg" target="_blank">disk.yandex.ru/d/0PTDBULI4O-hMgx</a> завета. Все материалы при желании вы сможете скачать на свой ПК или Яндекс.Диск.
+	</p>
+	<p>Моя почта для связи: <a href="#" class="email-link">нажмите, чтобы увидеть</a>.</p>
+	<p>Спасибо, что были со мной. &#x2764;&#xFE0F;
+	  Да благословит вас Господь и даст вам мир всегда и во всём (Пс.28:11, 2Фесс.3:16)! &#x2764;&#xFE0F;</p>
+      </div>
+    </div>
+
+    <script>
+      const link = document.querySelector(".email-link");
+
+      function showText(event) {
+	  event.preventDefault();
+	  const name = "t13zig";
+	  const domain = "yandex.ru";
+	  const symbol = "\u0040";
+	  let txt = "";
+	  txt += name;
+	  txt += symbol;
+	  txt += domain;
+	  link.href = "mailto:" + txt;
+	  link.textContent = txt;
+	  link.removeEventListener("click", showText);
+      }
+      
+      link.addEventListener("click", showText);
+    </script>
+  </body>
+</html>
